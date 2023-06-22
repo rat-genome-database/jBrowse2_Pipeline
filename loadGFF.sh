@@ -35,16 +35,16 @@ do
 echo "Loading $f"
 if [ -f "$f" ]; then
    echo "found file"
-   gt gff3 -sortlines -tidy -retainids "$f" >  "$f.sorted.gff"
-   bgzip "$f.sorted.gff" 
-   tabix "$f.sorted.gff.gz" 
+   /usr/local/genometools/bin/gt gff3 -sortlines -tidy -retainids "$f" >  "$f.sorted.gff"
+   /usr/bin/bgzip "$f.sorted.gff"
+   /usr/bin/tabix "$f.sorted.gff.gz"
 
    base=$(basename "$f" .gff3)
 
    if [[ -z "$3" ]]; then
-      jbrowse add-track "$f.sorted.gff.gz" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/ 
+      /usr/local/bin/jbrowse add-track "$f.sorted.gff.gz" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
    else 
-      jbrowse add-track "$f.sorted.gff.gz" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/ 
+      /usr/local/bin/jbrowse add-track "$f.sorted.gff.gz" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
    fi
 fi
 done
