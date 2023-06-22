@@ -10,8 +10,6 @@ echo ""
 
 echo "Processing $1"
 
-cd "$1"
-
 rm "$1"/*.gz.tbi
 rm "$1"/*.sorted.gff
 rm "$1"/*.sorted.gff.gz
