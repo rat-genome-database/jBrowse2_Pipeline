@@ -6,7 +6,7 @@ echo ""
 echo "********  loadGFF.sh  $1 $2  $3 ***********"
 echo ""
 
-set -o xtrace
+#set -o xtrace
 
 echo "Processing $1"
 
