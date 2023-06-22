@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="hg18";
-ROOTDIR="/data/data/gff3/Human/hg18" fa
+ROOTDIR="/data/data/gff3/jbrowse2/Human/hg18" fa
 
 ../makeFasta.sh $ASSEMBLY "hg18 (Human)"
 

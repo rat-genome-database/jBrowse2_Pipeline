@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ASSEMBLY="canFam3";
-ROOTDIR="/data/data/gff3/Dog/dog31"
+ROOTDIR="/data/data/gff3/jbrowse2/Dog/dog31"
 
 echo ""
 echo "*****************************************************"

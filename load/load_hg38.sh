@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="hg38";
-ROOTDIR="/data/data/gff3/Human/hg38"
+ROOTDIR="/data/data/gff3/jbrowse2/Human/hg38"
 
 ../makeFasta.sh $ASSEMBLY "hg38 (Human)" fna
 

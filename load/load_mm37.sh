@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="mm37";
-ROOTDIR="/data/data/gff3/Mouse/mm37"
+ROOTDIR="/data/data/gff3/jbrowse2/Mouse/mm37"
 
 ../makeFasta.sh $ASSEMBLY "GRCm37 (Mouse)" fa
 

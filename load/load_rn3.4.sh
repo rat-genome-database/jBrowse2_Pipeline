@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="rn3.4";
-ROOTDIR="/data/data/gff3/Rat/rn3_4"
+ROOTDIR="/data/data/gff3/jbrowse2/Rat/rn3_4"
 
 ../makeFasta.sh $ASSEMBLY "RGSC_v3.4 (Rat)" fa
 

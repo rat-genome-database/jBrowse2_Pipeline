@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="susScr3";
-ROOTDIR="/data/data/gff3/Pig/pig10"
+ROOTDIR="/data/data/gff3/jbrowse2/Pig/pig10"
 
 ../makeFasta.sh $ASSEMBLY "susScr3 (Pig)" mfa
 

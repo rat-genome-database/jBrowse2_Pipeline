@@ -6,7 +6,7 @@ echo "*****************************************************"
 echo ""
 
 ASSEMBLY="panPan2";
-ROOTDIR="/data/data/gff3/Bonobo/bonobo2"
+ROOTDIR="/data/data/gff3/jbrowse2/Bonobo/bonobo2"
 
 ../makeFasta.sh $ASSEMBLY "panPan2 (Bonobo)" mfa
 
