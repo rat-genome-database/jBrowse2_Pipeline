@@ -17,9 +17,9 @@ mkdir logs
 cd load
 #RAT
 ./load_rn7.2.sh 2>&1 | tee ../logs/load_rn7.2.log
-./load_rn6.sh 2>&1 | tee ../logs/load_rn6.log
-./load_rn5.sh 2>&1 | tee ../logs/load_rn5.log
-./load_rn3.4.sh 2>&1 | tee ../logs/load_rn3.4.log
+#./load_rn6.sh 2>&1 | tee ../logs/load_rn6.log
+#./load_rn5.sh 2>&1 | tee ../logs/load_rn5.log
+#./load_rn3.4.sh 2>&1 | tee ../logs/load_rn3.4.log
 #Human
 #./load_hg38.sh 2>&1 | tee ../logs/load_hg38.log
 #./load_hg19.sh 2>&1 | tee ../logs/load_hg19.log
