@@ -12,7 +12,9 @@ echo ""
 ../makeFasta.sh $ASSEMBLY "canFam3.1 (Domestic Dog)" mfa
 
 for dir in "$ROOTDIR"/*; do
-   base=$(basename "$dir")
-   echo "calling loadGFF.sh $dir $ASSEMBLY $base"
-   ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  if [ -d "$dir" ]; then
+    base=$(basename "$dir")
+    echo "calling loadGFF.sh $dir $ASSEMBLY $base"
+    ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  fi
 done
