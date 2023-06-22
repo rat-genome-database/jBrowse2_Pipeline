@@ -5,6 +5,8 @@ echo "***************** Loading RN6   *********************"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="rn6";
 ROOTDIR="/data/data/gff3/jbrowse2/Rat/rn6"
 

@@ -2,6 +2,8 @@
 
 #set -o xtrace
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="rn7.2";
 ROOTDIR="/data/data/gff3/jbrowse2/Rat/rn7"
 

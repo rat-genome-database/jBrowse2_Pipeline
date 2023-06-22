@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # $1 assembly  $2 displayName $3 extension
+cd /home/rgdpub/jbrowse2
 
 echo ""
 echo "********  Running makeFasta.sh  $1 $2  $3 ***********"

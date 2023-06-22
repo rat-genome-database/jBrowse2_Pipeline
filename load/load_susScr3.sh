@@ -5,6 +5,8 @@ echo "***************** susScr3 (Pig) ******************"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="susScr3";
 ROOTDIR="/data/data/gff3/jbrowse2/Pig/pig10"
 

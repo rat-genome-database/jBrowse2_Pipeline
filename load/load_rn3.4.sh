@@ -5,6 +5,8 @@ echo "***************** Loading RGSC_v3.4******************"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="rn3.4";
 ROOTDIR="/data/data/gff3/jbrowse2/Rat/rn3_4"
 

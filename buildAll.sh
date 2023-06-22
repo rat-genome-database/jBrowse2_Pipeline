@@ -8,7 +8,7 @@ echo "***************** BUILD JBROWSE *********************"
 echo "*****************************************************"
 echo ""
 
-cd $1
+cd /home/rgdpub/jbrowse2
 
 rm -rf logs
 mkdir logs

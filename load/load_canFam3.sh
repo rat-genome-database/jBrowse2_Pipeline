@@ -3,6 +3,8 @@
 ASSEMBLY="canFam3";
 ROOTDIR="/data/data/gff3/jbrowse2/Dog/dog31"
 
+cd /home/rgdpub/jbrowse2/load
+
 echo ""
 echo "*****************************************************"
 echo "***************** $ASSEMBLY *************************"

@@ -5,6 +5,8 @@ echo "***************** Loading chlSab2 (Green Monkey)*****"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="chlSab2";
 ROOTDIR="/data/data/gff3/jbrowse2/Vervet/chlSab2"
 

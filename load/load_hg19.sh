@@ -5,6 +5,8 @@ echo "***************** Loading hg19 ******************"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="hg19";
 ROOTDIR="/data/data/gff3/jbrowse2/Human/hg19"
 

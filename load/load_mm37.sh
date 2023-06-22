@@ -5,6 +5,8 @@ echo "***************** Loading Mouse 37 ******************"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="mm37";
 ROOTDIR="/data/data/gff3/jbrowse2/Mouse/mm37"
 

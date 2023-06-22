@@ -5,6 +5,8 @@ echo "***************** Loading panPan2 (Bonobo) **********"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="panPan2";
 ROOTDIR="/data/data/gff3/jbrowse2/Bonobo/bonobo2"
 
