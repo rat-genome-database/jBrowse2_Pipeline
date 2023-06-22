@@ -1,2 +1,2 @@
-# jBrowse2_Pipeline
+# jbrowse2_pipeline
 Build and deploy JBrowse2
