@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# $1 assembly
+# $1 ROOT directory
 
 echo ""
 echo "*****************************************************"
@@ -8,12 +8,15 @@ echo "***************** BUILD JBROWSE *********************"
 echo "*****************************************************"
 echo ""
 
-rm ../logs/*
+cd $1
 
-./resetConfig.sh 2>&1 | tee logs/resetConfig.log 
+rm -rf logs
+mkdir logs
+
+./resetConfig.sh 2>&1 | tee logs/resetConfig.log
 cd load
 #RAT
-./load_rn7.2.sh 2>&1 | tee ../logs/load_rn7.2.log 
+./load_rn7.2.sh 2>&1 | tee ../logs/load_rn7.2.log
 #./load_rn6.sh 2>&1 | tee ../logs/load_rn6.log 
 #./load_rn5.sh 2>&1 | tee ../logs/load_rn5.log     
 #./load_rn3.4.sh 2>&1 | tee ../logs/load_rn3.4.log   
