@@ -3,10 +3,12 @@
 # $1 assembly
 
 echo ""
-echo ""
 echo "*****************************************************"
 echo "***************** BUILD JBROWSE *********************"
 echo "*****************************************************"
+echo ""
+
+rm ../logs/*
 
 ./resetConfig.sh 2>&1 | tee logs/resetConfig.log 
 cd load
