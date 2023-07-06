@@ -8,7 +8,7 @@ echo ""
 cd /home/rgdpub/jbrowse2/load
 
 ASSEMBLY="susScr3";
-ROOTDIR="/data/data/gff3/jbrowse2/Pig/pig10"
+ROOTDIR="/data/data/gff3/jbrowse2/Pig/susScr3"
 
 ../makeFasta.sh $ASSEMBLY "susScr3 (Pig)" mfa
 

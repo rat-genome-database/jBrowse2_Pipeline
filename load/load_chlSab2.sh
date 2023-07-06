@@ -8,7 +8,7 @@ echo ""
 cd /home/rgdpub/jbrowse2/load
 
 ASSEMBLY="chlSab2";
-ROOTDIR="/data/data/gff3/jbrowse2/Vervet/chlSab2"
+ROOTDIR="/data/data/gff3/jbrowse2/Green Monkey/chlSab2"
 
 ../makeFasta.sh $ASSEMBLY "chlSab2 (Green Monkey/Vervet)" mfa
 
