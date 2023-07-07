@@ -23,7 +23,7 @@ cd load
 #Human
 ./load_hg38.sh 2>&1 | tee ../logs/load_hg38.log
 ./load_hg19.sh 2>&1 | tee ../logs/load_hg19.log
-./load_hg18.sh 2>&1 | tee ../logs/load_hg18.log
+#./load_hg18.sh 2>&1 | tee ../logs/load_hg18.log
 #Mouse
 ./load_mm39.sh 2>&1 | tee ../logs/load_mm39.log
 ./load_mm38.sh 2>&1 | tee ../logs/load_mm38.log
