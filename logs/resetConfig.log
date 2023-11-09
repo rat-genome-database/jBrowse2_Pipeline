@@ -1,0 +1,8 @@
+
+*********************************************************
+** Deleting all files to create empty jbrowse instance **
+*********************************************************
+removing old logs
+reset config.json
+updating aliases from /data/data/jbrowse2/aliases
+removing all tracks

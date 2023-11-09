@@ -1,0 +1,26 @@
+
+*****************************************************
+***************** BUILD JBROWSE *********************
+*****************************************************
+
+
+*********************************************************
+** Deleting all files to create empty jbrowse instance **
+*********************************************************
+rm: cannot remove '/data/jbrowse2/*.gff.gz': No such file or directory
+rm: cannot remove '/data/jbrowse2/*.gz.tbi': No such file or directory
+rm: cannot remove '/data/jbrowse2/*.bigwig': No such file or directory
+rm: cannot remove '/data/jbrowse2/rn7.2/*': No such file or directory
+rm: cannot remove '/data/jbrowse2/rn6/*': No such file or directory
+
+*****************************************************
+***************** Loading RN6   *********************
+*****************************************************
+
+
+********  Running makeFasta.sh  rn6 Rnor_6.0 (Rat)   ***********
+
+Loading rn6.fa as Rnor_6.0 (Rat)
+Added assembly "rn6" to /data/jbrowse2//config.json
+Indexing assembly rn6...
+Finished!

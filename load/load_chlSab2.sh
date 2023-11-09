@@ -5,12 +5,18 @@ echo "***************** Loading chlSab2 (Green Monkey)*****"
 echo "*****************************************************"
 echo ""
 
+cd /home/rgdpub/jbrowse2/load
+
 ASSEMBLY="chlSab2";
-ROOTDIR="/data/data/gff3/Vervet/chlSab2"
+ROOTDIR="/data/data/jbrowse2/gff3/Green Monkey/chlSab2"
 
-../makeFasta.sh $ASSEMBLY "chlSab2 (Green Monkey/Vervet)" mfa
+../makeFasta.sh $ASSEMBLY "chlSab2 (Green Monkey/Vervet)" 
 
-../loadGFF.sh $ROOTDIR $ASSEMBLY "Genomic Objects"
-../loadGFF.sh $ROOTDIR/pipelineOutput $ASSEMBLY genes
-../loadGFF.sh $ROOTDIR/pipelineOutput/ontology $ASSEMBLY "Disease Tracks"
+for dir in "$ROOTDIR"/*; do
+  if [ -d "$dir" ]; then
+    base=$(basename "$dir")
+    echo "calling loadGFF.sh $dir $ASSEMBLY $base"
+    ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  fi
+done
 

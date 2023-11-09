@@ -1,17 +1,16 @@
 #!/bin/bash
-
-ASSEMBLY="canFam3";
-ROOTDIR="/data/data/jbrowse2/gff3/Dog/canFam3"
+echo ""
+echo "*****************************************************"
+echo "***************** Loading panPan3 (Bonobo) **********"
+echo "*****************************************************"
+echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-echo ""
-echo "*****************************************************"
-echo "***************** $ASSEMBLY *************************"
-echo "*****************************************************"
-echo ""
+ASSEMBLY="panPan3";
+ROOTDIR="/data/data/jbrowse2/gff3/Bonobo/panPan3"
 
-../makeFasta.sh $ASSEMBLY "canFam3.1 (Domestic Dog)" 
+../makeFasta.sh $ASSEMBLY "panPan3 (Bonobo)" 
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
@@ -20,3 +19,5 @@ for dir in "$ROOTDIR"/*; do
     ../loadGFF.sh "$dir" $ASSEMBLY "$base"
   fi
 done
+
+

@@ -1,16 +1,18 @@
 #!/bin/bash
 echo ""
 echo "*****************************************************"
-echo "***************** Loading hg18  ******************"
+echo "***************** Loading UTH_Rnor_SHRSP_BbbUtx_1.0 ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="hg18";
-ROOTDIR="/data/data/jbrowse2/gff3/Human/hg18" 
+ASSEMBLY="UTH_Rnor_SHRSP_BbbUtx_1.0";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/UTH_Rnor_SHRSP_BbbUtx_1.0"
 
-../makeFasta.sh $ASSEMBLY "hg18 (Human)"
+../makeFasta.sh $ASSEMBLY "UTH_Rnor_SHRSP_BbbUtx_1.0 (Rat)" 
+
+cd /home/rgdpub/jbrowse2/load
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

@@ -5,15 +5,23 @@ echo "***************** Loading RN6   *********************"
 echo "*****************************************************"
 echo ""
 
-ASSEMBLY="rn6";
-ROOTDIR="/data/data/gff3/jbrowse2/Rat/rn6"
+cd /home/rgdpub/jbrowse2/load
 
-../makeFasta.sh $ASSEMBLY "Rnor_6.0 (Rat)" fa
+ASSEMBLY="rn6";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn6"
+
+../makeFasta.sh $ASSEMBLY "Rnor_6.0 (Rat)" 
+
+cd /home/rgdpub/jbrowse2/load
 
 for dir in "$ROOTDIR"/*; do
-   base=$(basename "$dir")
-   echo "calling loadGFF.sh $dir $ASSEMBLY $base"
-   ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  if [ -d "$dir" ]; then
+    base=$(basename "$dir")
+    echo "calling loadGFF.sh $dir $ASSEMBLY $base"
+    ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  fi
 done
 
-
+echo "running indexing"
+export NODE_OPTIONS='--max-old-space-size=4096'
+jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log

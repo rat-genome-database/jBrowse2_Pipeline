@@ -1,16 +1,26 @@
 #!/bin/bash
 
-# $1 assembly  $2 displayName $3 extension
+# $1 assembly  $2 displayName 
+
+#set -o xtrace
+#export DEBUG=jbrowse*
+
+
+ALIASES="--refNameAliases=aliases/aliases_${1}.txt"
+
+cd /home/rgdpub/jbrowse2
 
 echo ""
-echo "********  Running makeFasta.sh  $1 $2  $3 ***********"
+echo "********  Running makeFasta.sh  $1 $2 ***********"
 echo ""
-
-rm -rf /ref/fasta/jbrowse/$1.*
-echo "Generating FASTA file for /ref/fasta/$1.$3"
-cat /ref/fasta/$1/*.$3 > /ref/fasta/jbrowse/$1.fa
 
 echo "Loading $1.fa as $2"
-samtools faidx /ref/fasta/jbrowse/$1.fa
-jbrowse add-assembly /ref/fasta/jbrowse/$1.fa --displayName="$2" --load copy --type indexedFasta --out /data/jbrowse2/
+/usr/bin/samtools faidx /data/data/jbrowse2/fasta/$1.fa
+cd /data/jbrowse2
+/usr/local/bin/jbrowse add-assembly /data/data/jbrowse2/fasta/$1.fa \
+    $ALIASES \
+  --displayName="$2" \
+  --load copy -n $1 \
+  --type indexedFasta \
+  --out /data/jbrowse2/
 

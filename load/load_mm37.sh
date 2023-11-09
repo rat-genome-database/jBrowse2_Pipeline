@@ -5,15 +5,21 @@ echo "***************** Loading Mouse 37 ******************"
 echo "*****************************************************"
 echo ""
 
-ASSEMBLY="mm37";
-ROOTDIR="/data/data/gff3/Mouse/mm37"
+cd /home/rgdpub/jbrowse2/load
 
-../makeFasta.sh $ASSEMBLY "GRCm37 (Mouse)" fa
+ASSEMBLY="mm37";
+ROOTDIR="/data/data/jbrowse2/gff3/Mouse/mm37"
+
+../makeFasta.sh $ASSEMBLY "GRCm37 (Mouse)" 
 
 for dir in "$ROOTDIR"/*; do
-   base=$(basename "$dir")
-   echo "calling loadGFF.sh $dir $ASSEMBLY $base"
-   ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  if [ -d "$dir" ]; then
+    base=$(basename "$dir")
+    echo "calling loadGFF.sh $dir $ASSEMBLY $base"
+    ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  fi
 done
 
-
+echo "running indexing"
+export NODE_OPTIONS='--max-old-space-size=4096'
+jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log

@@ -5,14 +5,20 @@ echo "***************** Loading hg 38 ******************"
 echo "*****************************************************"
 echo ""
 
-ASSEMBLY="hg38";
-ROOTDIR="/data/data/gff3/Human/hg38"
+cd /home/rgdpub/jbrowse2/load
 
-../makeFasta.sh $ASSEMBLY "hg38 (Human)" fna
+ASSEMBLY="hg38";
+ROOTDIR="/data/data/jbrowse2/gff3/Human/hg38"
+
+../makeFasta.sh $ASSEMBLY "hg38 (Human)" 
 
 for dir in "$ROOTDIR"/*; do
-   base=$(basename "$dir")
-   echo "calling loadGFF.sh $dir $ASSEMBLY $base"
-   ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  if [ -d "$dir" ]; then
+    base=$(basename "$dir")
+    echo "calling loadGFF.sh $dir $ASSEMBLY $base"
+    ../loadGFF.sh "$dir" $ASSEMBLY "$base"
+  fi
 done
 
+echo "running indexing"
+jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log

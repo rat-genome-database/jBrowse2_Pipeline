@@ -1,0 +1,52 @@
+#!/bin/bash
+ 
+#1 [directory path] 2 [assembly name] 3 [category]
+
+echo ""
+echo "********  loadGFF.sh  $1 $2  $3 ***********"
+echo ""
+
+#set -o xtrace
+
+echo "Processing $1"
+
+rm "$1"/*.gz.tbi
+rm "$1"/*.sorted.gff
+rm "$1"/*.sorted.gff.gz
+
+
+for dir in "$1"/*; do
+    if [ -d "$dir" ]; then
+       base=$(basename "$dir")
+       echo $base;
+       echo $dir;
+       ../loadGFF.sh "$dir" $2 "$3,$base"    
+     fi   
+
+done
+
+
+gunzip "$1"/*.gz
+
+files="$1"/*.gff3
+
+for f in "$1"/*.gff3
+do
+echo "Loading $f"
+if [ -f "$f" ]; then
+   echo "found file"
+   /usr/local/genometools/bin/gt gff3 -sortlines -tidy -retainids "$f" >  "$f.sorted.gff"
+   /usr/bin/bgzip "$f.sorted.gff"
+   /usr/bin/tabix "$f.sorted.gff.gz"
+
+   base=$(basename "$f" .gff3)
+
+   if [[ -z "$3" ]]; then
+      /usr/local/bin/jbrowse add-track "$f.sorted.gff.gz" --subDir="$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
+   else 
+      /usr/local/bin/jbrowse add-track "$f.sorted.gff.gz" --subDir="$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
+   fi
+fi
+done
+
+

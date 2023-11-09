@@ -1,0 +1,119 @@
+{
+  "defaultSession": {
+     "drawerPosition": "right",
+    "drawerWidth": 384,
+    "widgets": {
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "initialized": true,
+        "collapsed": {
+          "undefined-Disease Related Tracks": true,
+          "undefined-Gene-Chemical Interaction Tracks": true,
+          "undefined-Gene Models": false,
+          "undefined-QTLs": true,
+          "undefined-Strains": true,
+          "undefined-Variants": true,
+          "undefined-Epigenetics": true,
+          "undefined-RNA-Seq": true,
+          "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2": true,
+          "Disease Related Tracks": true,
+          "Epigenetics": true,
+          "Gene Models": false,
+          "Gene-Chemical Interaction Tracks": true,
+          "QTLs": true,
+          "RNA-Seq": true,
+          "Strains": true,
+          "Variants": true
+        },
+        "view": "84AxXKk_4"
+      }
+    },
+    "activeWidgets": {
+      "hierarchicalTrackSelector": "hierarchicalTrackSelector"
+    },
+    "minimized": false,
+    "id": "KTXvi5bRiS",
+    "name": "Welcome to RGD 9/6/2023, 12:16:44 PM",
+    "margin": 0,
+    "views": [
+      {
+        "id": "84AxXKk_4",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": 2496,
+        "bpPerPx": 3020.2051154652663,
+        "displayedRegions": [
+          {
+            "refName": "Chr5",
+            "start": 0,
+            "end": 166875058,
+            "reversed": false,
+            "assemblyName": "rn7.2"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "A3FlYmf-H",
+            "type": "FeatureTrack",
+            "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "kzhn7PdNwq",
+                "type": "LinearBasicDisplay",
+                "heightPreConfig": 100,
+                "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "offset",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "showGridlines": true
+      }
+    ],
+    "sessionTracks": [],
+    "sessionAssemblies": [],
+    "temporaryAssemblies": [],
+    "connectionInstances": [],
+    "sessionConnections": [],
+    "sessionPlugins": []
+   },
+  "configuration": {
+   "hierarchical": {
+      "sort": {
+        "trackNames": true,
+        "categories": true
+      },
+      "defaultCollapse": {
+        "topLevelCategories": true, 
+        "subCategories": true 
+      }
+    }, 
+   "logoPath": {
+      "uri": "https://rgd.mcw.edu/common/images/rgd_logo_jbrowse.png"
+    },
+   "theme" :{
+      "palette": {
+        "primary": {
+          "main": "#333333"
+        },
+        "secondary": {
+          "main": "#2865A3"
+        },
+        "tertiary": {
+          "main": "#eab676"
+        },
+        "quaternary": {
+          "main": "#d50000"
+        }
+      }
+   }
+ }
+}

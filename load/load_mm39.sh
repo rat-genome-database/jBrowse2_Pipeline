@@ -1,16 +1,16 @@
 #!/bin/bash
 echo ""
 echo "*****************************************************"
-echo "***************** Loading panPan2 (Bonobo) **********"
+echo "***************** Loading Mouse 39 ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="panPan2";
-ROOTDIR="/data/data/jbrowse2/gff3/Bonobo/panPan2"
+ASSEMBLY="mm39";
+ROOTDIR="/data/data/jbrowse2/gff3/Mouse/mm39"
 
-../makeFasta.sh $ASSEMBLY "panPan2 (Bonobo)" 
+../makeFasta.sh $ASSEMBLY "GRCm39 (Mouse)" 
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
@@ -20,4 +20,6 @@ for dir in "$ROOTDIR"/*; do
   fi
 done
 
-
+echo "running indexing"
+export NODE_OPTIONS='--max-old-space-size=4096'
+jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log
