@@ -17,7 +17,7 @@ echo ""
 echo "Loading $1.fa as $2"
 /usr/bin/samtools faidx /data/data/jbrowse2/fasta/$1.fa
 cd /data/jbrowse2
-/usr/local/bin/jbrowse add-assembly /data/data/jbrowse2/fasta/$1.fa \
+jbrowse add-assembly /data/data/jbrowse2/fasta/$1.fa \
     $ALIASES \
   --displayName="$2" \
   --load copy -n $1 \
