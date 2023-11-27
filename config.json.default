@@ -23,6 +23,7 @@
           "Gene-Chemical Interaction Tracks": true,
           "QTLs": true,
           "RNA-Seq": true,
+          "Synteny": true,
           "Strains": true,
           "Variants": true
         },
