@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /etc/profile
+
 echo ""
 echo "*********************************************************"
 echo "** Deleting all files to create empty jbrowse instance **"

@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source /etc/profile
+
 echo ""
 echo "*****************************************************"
 echo "***************** Loading RGSC_v3.4******************"
@@ -6,7 +9,7 @@ echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
-
+source /etc/profile
 ASSEMBLY="rn3.4";
 ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn3.4"
 

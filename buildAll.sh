@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /etc/profile
+
 # $1 ROOT directory
 
 echo ""

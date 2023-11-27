@@ -1,10 +1,11 @@
 #!/bin/bash
 
+source /etc/profile
+
 # $1 assembly  $2 displayName 
 
 #set -o xtrace
 #export DEBUG=jbrowse*
-
 
 ALIASES="--refNameAliases=aliases/aliases_${1}.txt"
 

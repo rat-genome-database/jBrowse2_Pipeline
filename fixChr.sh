@@ -1,5 +1,7 @@
 #!/bin/bash
- 
+
+source /etc/profile
+
 sed -i 's/chr/Chr/g' <file>
 
 for f in "$1"/*.narrowPeak

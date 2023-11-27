@@ -1,4 +1,4 @@
-
+source /etc/profile
 
 ASSEMBLY="panPan3"
 PREFIX="chr"

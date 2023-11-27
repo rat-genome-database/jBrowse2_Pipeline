@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source /etc/profile
+
 echo ""
 echo "*****************************************************"
 echo "***************** Loading UTH_Rnor_SHR_Utx ******************"

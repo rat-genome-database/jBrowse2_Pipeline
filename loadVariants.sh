@@ -1,11 +1,14 @@
 #!/bin/bash
 
-$1 - assembly  $2 Species
+source /etc/profile
+
+#$1 - assembly  $2 Species
 
 #set -o xtrace
 
 ASSEMBLY="$1";
 ROOTDIR="/data/data/jbrowse2/gff3_variants/$2/${ASSEMBLY}"
+
 
 echo ""
 echo "*****************************************************"

@@ -1,5 +1,7 @@
 #!/bin/bash
- 
+
+source /etc/profile
+
 #1 [directory path] 2 [assembly name] 3 [category]
 
 echo ""

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /etc/profile
+
 ASSEMBLY="canFam3";
 ROOTDIR="/data/data/jbrowse2/gff3/Dog/canFam3"
 

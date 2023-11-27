@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#set -o xtrace
+source /etc/profile
 
+#set -o xtrace
 cd /home/rgdpub/jbrowse2/load
 
 ASSEMBLY="rn7.2";

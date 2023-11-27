@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /etc/profile
+
 #a1=rn7.2
 #a2=rn6
 #/data/minimap2/minimap2/minimap2 /data/data/jbrowse2/fasta/${a1}.fa /data/data/jbrowse2/fasta/${a2}.fa > /data/data/jbrowse2/paf/${a1}\ to\ ${a2}\ Synteny.paf 

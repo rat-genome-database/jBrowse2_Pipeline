@@ -1,5 +1,7 @@
 #!/bin/bash
- 
+
+source /etc/profile
+
 #1 [assembly 1] 2 [assembly 2] 
 
 echo ""
