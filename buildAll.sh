@@ -46,6 +46,11 @@ cd load
 ./load_panPan2.sh 2>&1 | tee /data/jbrowse_log/load_panPan2.log
 #Naked Mole Rat
 ./load_hetGla2.sh 2>&1 | tee /data/jbrowse_log/load_hetGla2.log
+#Chinchilla
+./load_ChiLan1.0.sh 2>&1 | tee /data/jbrowse_log/load_ChiLan1.0.log
+#Squirrel
+./load_SpeTri2.0.sh 2>&1 | tee /data/jbrowse_log/load_SpeTri2.0.log
+
 
 cd /home/rgdpub/jbrowse2
 
