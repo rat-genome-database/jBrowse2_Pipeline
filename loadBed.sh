@@ -65,9 +65,9 @@ if [ -f "$f" ]; then
    base=$(basename "$f" .bed.gz)
 
    if [[ -z "$3" ]]; then
-      /usr/local/bin/jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
+      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
    else 
-      /usr/local/bin/jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
+      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
    fi
 fi
 done
