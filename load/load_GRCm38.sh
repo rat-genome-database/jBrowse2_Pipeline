@@ -2,18 +2,18 @@
 
 source /etc/profile
 
-ASSEMBLY="canFam3";
-ROOTDIR="/data/data/jbrowse2/gff3/Dog/canFam3"
+echo ""
+echo "*****************************************************"
+echo "***************** Loading Mouse 38 ******************"
+echo "*****************************************************"
+echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-echo ""
-echo "*****************************************************"
-echo "***************** $ASSEMBLY *************************"
-echo "*****************************************************"
-echo ""
+ASSEMBLY="GRCm38";
+ROOTDIR="/data/data/jbrowse2/gff3/Mouse/GRCm38"
 
-../makeFasta.sh $ASSEMBLY "canFam3.1 (Domestic Dog)" 
+../makeFasta.sh $ASSEMBLY "GRCm38 (Mouse)" 
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

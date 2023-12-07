@@ -4,18 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading RGSC_v3.4******************"
+echo "***************** Loading Mhudiblu_PPA_v0 (Bonobo) **********"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
-source /etc/profile
-ASSEMBLY="rn3.4";
-ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn3.4"
 
-../makeFasta.sh $ASSEMBLY "RGSC_v3.4 (Rat)" 
+ASSEMBLY="Mhudiblu_PPA_v0";
+ROOTDIR="/data/data/jbrowse2/gff3/Bonobo/Mhudiblu_PPA_v0"
 
-cd /home/rgdpub/jbrowse2/load
+../makeFasta.sh $ASSEMBLY "Mhudiblu_PPA_v0 (Bonobo)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
@@ -28,3 +26,4 @@ done
 echo "running indexing"
 export NODE_OPTIONS='--max-old-space-size=4096'
 jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log
+

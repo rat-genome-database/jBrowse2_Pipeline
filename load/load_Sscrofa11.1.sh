@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading hg 38 ******************"
+echo "***************** Sscrofa11.1 (Pig) ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="hg38";
-ROOTDIR="/data/data/jbrowse2/gff3/Human/hg38"
+ASSEMBLY="Sscrofa11.1";
+ROOTDIR="/data/data/jbrowse2/gff3/Pig/Sscrofa11.1"
 
-../makeFasta.sh $ASSEMBLY "hg38 (Human)" 
+../makeFasta.sh $ASSEMBLY "Sscrofa11.1 (Pig)" mfa
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

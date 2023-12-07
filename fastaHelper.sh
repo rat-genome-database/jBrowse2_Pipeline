@@ -1,6 +1,6 @@
 source /etc/profile
 
-ASSEMBLY="panPan3"
+ASSEMBLY="Mhudiblu_PPA_v0"
 PREFIX="chr"
 EXT="fna"
 

@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading veroWho (Green Monkey)*****"
+echo "***************** Loading hg 38 ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="veroWho";
-ROOTDIR="/data/data/jbrowse2/gff3/Green Monkey/veroWho"
+ASSEMBLY="GRCh38";
+ROOTDIR="/data/data/jbrowse2/gff3/Human/GRCh38"
 
-../makeFasta.sh $ASSEMBLY "veroWho (Green Monkey/Vervet)" 
+../makeFasta.sh $ASSEMBLY "GRCh38 (Human)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

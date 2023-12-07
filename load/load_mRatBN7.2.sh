@@ -5,10 +5,10 @@ source /etc/profile
 #set -o xtrace
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="rn7.2";
-ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn7.2"
-BIGWIG="/data/data/jbrowse2/bigwig/Rat/rn7.2"
-BED="/data/data/jbrowse2/bed/Rat/rn7.2"
+ASSEMBLY="mRatBN7.2";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/mRatBN7.2"
+BIGWIG="/data/data/jbrowse2/bigwig/Rat/mRatBN7.2"
+BED="/data/data/jbrowse2/bed/Rat/mRatBN7.2"
 
 echo ""
 echo "*****************************************************"

@@ -4,14 +4,14 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading RN6   *********************"
+echo "***************** Loading Rnor_6.0   *********************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="rn6";
-ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn6"
+ASSEMBLY="Rnor_6.0";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/Rnor_6.0"
 
 ../makeFasta.sh $ASSEMBLY "Rnor_6.0 (Rat)" 
 

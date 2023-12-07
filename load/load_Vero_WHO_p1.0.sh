@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading hetGla2 (Naked Mole-Rat) ****"
+echo "***************** Loading Vero_WHO_p1.0 (Green Monkey)*****"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="hetGla2";
-ROOTDIR="/data/data/jbrowse2/gff3/Naked Mole-Rat/hetGla2"
+ASSEMBLY="Vero_WHO_p1.0";
+ROOTDIR="/data/data/jbrowse2/gff3/Green Monkey/Vero_WHO_p1.0"
 
-../makeFasta.sh $ASSEMBLY "hetGla2 (Naked Mole-Rat)" 
+../makeFasta.sh $ASSEMBLY "Vero_WHO_p1.0 (Green Monkey/Vervet)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
@@ -26,4 +26,3 @@ done
 echo "running indexing"
 export NODE_OPTIONS='--max-old-space-size=4096'
 jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log
-

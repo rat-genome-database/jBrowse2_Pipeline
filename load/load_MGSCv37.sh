@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** susScr3 (Pig) ******************"
+echo "***************** Loading Mouse 37 ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="susScr3";
-ROOTDIR="/data/data/jbrowse2/gff3/Pig/susScr3"
+ASSEMBLY="MGSCv37";
+ROOTDIR="/data/data/jbrowse2/gff3/Mouse/MGSCv37"
 
-../makeFasta.sh $ASSEMBLY "susScr3 (Pig)" mfa
+../makeFasta.sh $ASSEMBLY "GRCm37 (Mouse)" 
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
@@ -26,4 +26,3 @@ done
 echo "running indexing"
 export NODE_OPTIONS='--max-old-space-size=4096'
 jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log
-

@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading panPan3 (Bonobo) **********"
+echo "***************** Loading HetGla_female_1.0 (Naked Mole-Rat) ****"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="panPan3";
-ROOTDIR="/data/data/jbrowse2/gff3/Bonobo/panPan3"
+ASSEMBLY="HetGla_female_1.0";
+ROOTDIR="/data/data/jbrowse2/gff3/Naked Mole-Rat/HetGla_female_1.0"
 
-../makeFasta.sh $ASSEMBLY "panPan3 (Bonobo)" 
+../makeFasta.sh $ASSEMBLY "HetGla_female_1.0 (Naked Mole-Rat)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

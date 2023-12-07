@@ -4,16 +4,16 @@ source /etc/profile
 
 echo ""
 echo "*****************************************************"
-echo "***************** Loading hg18  ******************"
+echo "***************** Loading NCBI36  ******************"
 echo "*****************************************************"
 echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="hg18";
-ROOTDIR="/data/data/jbrowse2/gff3/Human/hg18" 
+ASSEMBLY="NCBI36";
+ROOTDIR="/data/data/jbrowse2/gff3/Human/NCBI36"
 
-../makeFasta.sh $ASSEMBLY "hg18 (Human)"
+../makeFasta.sh $ASSEMBLY "NCBI36 (Human)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

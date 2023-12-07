@@ -10,8 +10,8 @@ echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="rn5";
-ROOTDIR="/data/data/jbrowse2/gff3/Rat/rn5"
+ASSEMBLY="Rnor_5.0";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/Rnor_5.0"
 
 ../makeFasta.sh $ASSEMBLY "Rnor_5.0 (Rat)" 
 

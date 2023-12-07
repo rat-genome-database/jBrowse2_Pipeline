@@ -2,18 +2,18 @@
 
 source /etc/profile
 
-echo ""
-echo "*****************************************************"
-echo "***************** susScr11 (Pig) ******************"
-echo "*****************************************************"
-echo ""
+ASSEMBLY="CanFam3.1";
+ROOTDIR="/data/data/jbrowse2/gff3/Dog/CanFam3.1"
 
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="susScr11";
-ROOTDIR="/data/data/jbrowse2/gff3/Pig/susScr11"
+echo ""
+echo "*****************************************************"
+echo "***************** $ASSEMBLY *************************"
+echo "*****************************************************"
+echo ""
 
-../makeFasta.sh $ASSEMBLY "susScr11 (Pig)" mfa
+../makeFasta.sh $ASSEMBLY "CanFam3.1 (Domestic Dog)"
 
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then

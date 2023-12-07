@@ -16,7 +16,7 @@
           "undefined-Variants": true,
           "undefined-Epigenetics": true,
           "undefined-RNA-Seq": true,
-          "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2": true,
+          "Rat mRatBN7.2 (rn7) Genes and Transcripts-mRatBN7.2": true,
           "Disease Related Tracks": true,
           "Epigenetics": true,
           "Gene Models": false,
@@ -50,21 +50,21 @@
             "start": 0,
             "end": 166875058,
             "reversed": false,
-            "assemblyName": "rn7.2"
+            "assemblyName": "mRatBN7.2"
           }
         ],
         "tracks": [
           {
             "id": "A3FlYmf-H",
             "type": "FeatureTrack",
-            "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2",
+            "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-mRatBN7.2",
             "minimized": false,
             "displays": [
               {
                 "id": "kzhn7PdNwq",
                 "type": "LinearBasicDisplay",
                 "heightPreConfig": 100,
-                "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-rn7.2-LinearBasicDisplay"
+                "configuration": "Rat mRatBN7.2 (rn7) Genes and Transcripts-mRatBN7.2-LinearBasicDisplay"
               }
             ]
           }
