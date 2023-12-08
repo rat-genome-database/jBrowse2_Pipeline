@@ -27,8 +27,8 @@ rm /data/jbrowse2/mRatBN7.2/* 2>null
 rm /data/jbrowse2/Rnor_6.0/* 2>null
 rm /data/jbrowse2/Rnor_5.0/* 2>null
 rm /data/jbrowse2/RGSC_v3.4/* 2>null
-rm /data/jbrowse2/GRCh38/* 2>null
-rm /data/jbrowse2/GRCh37/* 2>null
+rm /data/jbrowse2/GRCh38.p14/* 2>null
+rm /data/jbrowse2/GRCh37.p13/* 2>null
 rm /data/jbrowse2/NCBI36/* 2>null
 rm /data/jbrowse2/GRCm39/* 2>null
 rm /data/jbrowse2/GRCm38/* 2>null

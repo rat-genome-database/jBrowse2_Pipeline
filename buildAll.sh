@@ -26,8 +26,8 @@ cd load
 ./load_UTH_Rnor_SHRSP_BbbUtx_1.0.sh 2>&1 | tee /data/jbrowse_log/load_UTH_Rnor_SHRSP_BbbUtx_1.0.log
 ./load_UTH_Rnor_WKY_Bbb_1.0.sh 2>&1 | tee /data/jbrowse_log/load_UTH_Rnor_WKY_Bbb_1.0.log
 #Human
-./load_GRCh38.sh 2>&1 | tee /data/jbrowse_log/load_GRCh38.log
-./load_GRCh37.sh 2>&1 | tee /data/jbrowse_log/load_GRCh37.log
+./load_GRCh38.p14.sh 2>&1 | tee /data/jbrowse_log/load_GRCh38.p14.log
+./load_GRCh37.p13.sh 2>&1 | tee /data/jbrowse_log/load_GRCh37.p13.log
 ./load_NCBI36.sh 2>&1 | tee /data/jbrowse_log/load_NCBI36.log
 #Mouse
 ./load_GRCm39.sh 2>&1 | tee /data/jbrowse_log/load_GRCm39.log
@@ -58,7 +58,7 @@ cd /home/rgdpub/jbrowse2
 ./loadPaf.sh mRatBN7.2 Rnor_6.0 > /data/jbrowse_log/loadPaf_mRatBN7.2-Rnor_6.0.log
 ./loadPaf.sh mRatBN7.2 Rnor_5.0 > /data/jbrowse_log/loadPaf_mRatBN7.2-Rnor_5.0.log
 ./loadPaf.sh mRatBN7.2 RGSC_v3.4 > /data/jbrowse_log/loadPaf_mRatBN7.2-RGSC_v3.4.log
-./loadPaf.sh mRatBN7.2 GRCh38 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.log
+./loadPaf.sh mRatBN7.2 GRCh38.p14 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.p14.log
 ./loadPaf.sh mRatBN7.2 Sscrofa11.1 > /data/jbrowse_log/loadPaf_mRatBN7.2-Sscrofa11.1.log
 ./loadPaf.sh mRatBN7.2 GRCm39 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCm39.log
 ./loadPaf.sh GRCh38 GRCm39 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.log
@@ -73,8 +73,8 @@ cd /home/rgdpub/jbrowse2/load
 ../loadVariants.sh Rnor_6.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_6.0_variants.log
 ../loadVariants.sh Rnor_5.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_5.0_variants.log
 ../loadVariants.sh RGSC_v3.4 Rat 2>&1 | tee /data/jbrowse_log/load_RGSC_v3.4_variants.log
-../loadVariants.sh GRCh38 Human 2>&1 | tee /data/jbrowse_log/load_GRCh38_variants.log
-../loadVariants.sh GRCh37 Human 2>&1 | tee /data/jbrowse_log/load_GRCh37_variants.log
+../loadVariants.sh GRCh38.p14 Human 2>&1 | tee /data/jbrowse_log/load_GRCh38.p14_variants.log
+../loadVariants.sh GRCh37.p13 Human 2>&1 | tee /data/jbrowse_log/load_GRCh37.p13_variants.log
 ../loadVariants.sh NCBI36 Human 2>&1 | tee /data/jbrowse_log/load_NCBI36_variants.log
 ../loadVariants.sh GRCm39 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm39_variants.log
 ../loadVariants.sh GRCm38 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm38_variants.log
