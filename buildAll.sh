@@ -31,7 +31,7 @@ cd load
 ./load_NCBI36.sh 2>&1 | tee /data/jbrowse_log/load_NCBI36.log
 #Mouse
 ./load_GRCm39.sh 2>&1 | tee /data/jbrowse_log/load_GRCm39.log
-./load_GRCm38.sh 2>&1 | tee /data/jbrowse_log/load_GRCm38.log
+./load_GRCm38.p6.sh 2>&1 | tee /data/jbrowse_log/load_GRCm38.p6.log
 ./load_MGSCv37.sh 2>&1 | tee /data/jbrowse_log/load_MGSCv37.log
 #Dog
 ./load_CanFam3.1.sh 2>&1 | tee /data/jbrowse_log/load_canFam3.log
@@ -61,7 +61,7 @@ cd /home/rgdpub/jbrowse2
 ./loadPaf.sh mRatBN7.2 GRCh38.p14 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.p14.log
 ./loadPaf.sh mRatBN7.2 Sscrofa11.1 > /data/jbrowse_log/loadPaf_mRatBN7.2-Sscrofa11.1.log
 ./loadPaf.sh mRatBN7.2 GRCm39 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCm39.log
-./loadPaf.sh GRCh38 GRCm39 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.log
+./loadPaf.sh GRCh38.p14 GRCm39 > /data/jbrowse_log/loadPaf_mRatBN7.2-GRCh38.p14.log
 ./loadPaf.sh mRatBN7.2 CanFam3.1 > /data/jbrowse_log/loadPaf_mRatBN7.2-CanFam3.1.log
 ./loadPaf.sh mRatBN7.2 UTH_Rnor_SHRSP_BbbUtx_1.0 > /data/jbrowse_log/loadPaf_mRatBN7.2-UTH_Rnor_SHRSP_BbbUtx_1.0.log
 ./loadPaf.sh mRatBN7.2 UTH_Rnor_SHR_Utx > /data/jbrowse_log/loadPaf_mRatBN7.2-UTH_Rnor_SHR_Utx.log
@@ -77,5 +77,5 @@ cd /home/rgdpub/jbrowse2/load
 ../loadVariants.sh GRCh37.p13 Human 2>&1 | tee /data/jbrowse_log/load_GRCh37.p13_variants.log
 ../loadVariants.sh NCBI36 Human 2>&1 | tee /data/jbrowse_log/load_NCBI36_variants.log
 ../loadVariants.sh GRCm39 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm39_variants.log
-../loadVariants.sh GRCm38 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm38_variants.log
+../loadVariants.sh GRCm38.p6 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm38.p6_variants.log
 ../loadVariants.sh MGSCv37 Mouse 2>&1 | tee /data/jbrowse_log/load_MGSCv37_variants.log
