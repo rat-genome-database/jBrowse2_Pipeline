@@ -39,7 +39,7 @@ cd load
 ./load_Sscrofa11.1.sh 2>&1 | tee /data/jbrowse_log/load_Sscrofa11.1.log
 ./load_Sscrofa10.2.sh 2>&1 | tee /data/jbrowse_log/load_Sscrofa10.2.log
 #Green Monkey
-./"load_Chlorocebus_sabeus 1.1.sh" 2>&1 | tee "/data/jbrowse_log/load_Chlorocebus_sabeus 1.1.log"
+./load_Chlorocebus_sabeus\ 1.1.sh 2>&1 | tee "/data/jbrowse_log/load_Chlorocebus_sabeus 1.1.log"
 ./load_Vero_WHO_p1.0.sh 2>&1 | tee /data/jbrowse_log/load_Vero_WHO_p1.0.log
 #Bonobo
 ./load_Mhudiblu_PPA_v0.sh 2>&1 | tee /data/jbrowse_log/load_Mhudiblu_PPA_v0.log
