@@ -27,7 +27,7 @@ echo "Running ${a1} to ${a2}"
 #/data/minimap2/minimap2/minimap2 /data/data/jbrowse2/fasta/${a1}.fa /data/data/jbrowse2/fasta/${a2}.fa > /data/data/jbrowse2/paf/${a1}\ to\ ${a2}\ Synteny.paf 
 
 #a1=rn7.2
-#a2=PanPan1.1
+#a2=panpan1.1
 echo "Running ${a1} to ${a2}"
 #/data/minimap2/minimap2/minimap2 /data/data/jbrowse2/fasta/${a1}.fa /data/data/jbrowse2/fasta/${a2}.fa > /data/data/jbrowse2/paf/${a1}\ to\ ${a2}\ Synteny.paf 
 

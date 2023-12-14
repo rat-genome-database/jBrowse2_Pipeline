@@ -34,16 +34,16 @@ cd load
 ./load_GRCm38.p6.sh 2>&1 | tee /data/jbrowse_log/load_GRCm38.p6.log
 ./load_MGSCv37.sh 2>&1 | tee /data/jbrowse_log/load_MGSCv37.log
 #Dog
-./load_CanFam3.1.sh 2>&1 | tee /data/jbrowse_log/load_canFam3.log
+./load_CanFam3.1.sh 2>&1 | tee /data/jbrowse_log/load_CanFam3.1.log
 #Pig
 ./load_Sscrofa11.1.sh 2>&1 | tee /data/jbrowse_log/load_Sscrofa11.1.log
 ./load_Sscrofa10.2.sh 2>&1 | tee /data/jbrowse_log/load_Sscrofa10.2.log
 #Green Monkey
-./load_Chlorocebus_sabeus\ 1.1.sh 2>&1 | tee "/data/jbrowse_log/load_Chlorocebus_sabeus 1.1.log"
+"./load_Chlorocebus_sabeus 1.1.sh" 2>&1 | tee "/data/jbrowse_log/load_Chlorocebus_sabeus 1.1.log"
 ./load_Vero_WHO_p1.0.sh 2>&1 | tee /data/jbrowse_log/load_Vero_WHO_p1.0.log
 #Bonobo
 ./load_Mhudiblu_PPA_v0.sh 2>&1 | tee /data/jbrowse_log/load_Mhudiblu_PPA_v0.log
-./load_PanPan1.1.sh 2>&1 | tee /data/jbrowse_log/load_PanPan1.1.log
+./load_panpan1.1.sh 2>&1 | tee /data/jbrowse_log/load_panpan1.1.log
 #Naked Mole Rat
 ./load_HetGla_female_1.0.sh 2>&1 | tee /data/jbrowse_log/load_HetGla_female_1.0.log
 #Chinchilla

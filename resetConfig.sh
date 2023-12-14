@@ -39,7 +39,7 @@ rm /data/jbrowse2/Sscrofa10.2/* 2>null
 rm "/data/jbrowse2/Chlorocebus_sabeus 1.1/*" 2>null
 rm /data/jbrowse2/Vero_WHO_p1.0/* 2>null
 rm /data/jbrowse2/Mhudiblu_PPA_v0/* 2>null
-rm /data/jbrowse2/PanPan1.1/* 2>null
+rm /data/jbrowse2/panpan1.1/* 2>null
 rm /data/jbrowse2/HetGla_female_1.0/* 2>null
 rm /data/jbrowse2/UTH_Rnor_SHR_Utx/* 2>null 
 rm /data/jbrowse2/UTH_Rnor_SHRSP_BbbUtx_1.0/* 2>null 

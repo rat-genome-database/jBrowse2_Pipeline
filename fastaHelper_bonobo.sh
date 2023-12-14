@@ -1,7 +1,7 @@
 
 source /etc/profile
 
-ASSEMBLY="PanPan1.1"
+ASSEMBLY="panpan1.1"
 PREFIX="chr"
 EXT="mfa"
 
