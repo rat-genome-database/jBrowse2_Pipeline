@@ -36,7 +36,7 @@ rm /data/jbrowse2/MGSCv37/* 2>null
 rm /data/jbrowse2/CanFam3.1/* 2>null
 rm /data/jbrowse2/Sscrofa11.1/* 2>null
 rm /data/jbrowse2/Sscrofa10.2/* 2>null
-rm "/data/jbrowse2/Chlorocebus_sabeus 1.1/*" 2>null
+rm "/data/jbrowse2/Chlorocebus_sabeus1.1/*" 2>null
 rm /data/jbrowse2/Vero_WHO_p1.0/* 2>null
 rm /data/jbrowse2/Mhudiblu_PPA_v0/* 2>null
 rm /data/jbrowse2/panpan1.1/* 2>null
