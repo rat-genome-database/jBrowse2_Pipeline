@@ -16,7 +16,7 @@ echo "********  Running makeFasta.sh  $1 $2 ***********"
 echo ""
 
 echo "Loading $1.fa as $2"
-/usr/bin/samtools faidx /data/data/jbrowse2/fasta/$1.fa
+samtools faidx /data/data/jbrowse2/fasta/$1.fa
 cd /data/jbrowse2
 jbrowse add-assembly /data/data/jbrowse2/fasta/$1.fa \
     $ALIASES \

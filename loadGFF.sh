@@ -38,7 +38,7 @@ echo "Loading $f"
 if [ -f "$f" ]; then
    echo "found file $f"
    fSorted=$f; 
-   /usr/bin/tabix "$f"
+   tabix "$f"
   
    if [ $? -eq 1 ]; then
  	gunzip "$f"
@@ -53,11 +53,11 @@ if [ -f "$f" ]; then
    fi	
    
    base=$(basename "$f" .gff3.gz)
-
-   if [[ -z "$3" ]]; then
-      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
+ 
+  if [[ -z "$3" ]]; then
+      jbrowse add-track "$fSorted" --config="{\"displays\": [ { \"type\": \"LinearBasicDisplay\", \"displayId\": \"$base-LinearBasicDisplay\", \"renderer\": { \"type\": \"SvgFeatureRenderer\", \"color1\": \"#770C0E\" } }]}"  --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
    else 
-      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
+      jbrowse add-track "$fSorted" --config="{\"displays\": [ { \"type\": \"LinearBasicDisplay\", \"displayId\": \"$base-LinearBasicDisplay\", \"renderer\": { \"type\": \"SvgFeatureRenderer\", \"color1\": \"#770C0E\" } }]}"  --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
    fi
 fi
 done

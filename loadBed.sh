@@ -47,7 +47,7 @@ echo "Loading $f"
 if [ -f "$f" ]; then
    echo "found file $f"
    fSorted=$f; 
-   /usr/bin/tabix "$f"
+   tabix "$f"
   
    if [ $? -eq 1 ]; then
  	#gunzip "$f"
