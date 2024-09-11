@@ -1,0 +1,50 @@
+{
+  "type": "SyntenyTrack",
+  "trackId": "[[assembly1]]2[[assembly2]].anchors",
+  "name": "[[assembly1]]-[[assembly2]] orthology",
+  "assemblyNames": [
+    "[[assembly1]]",
+    "[[assembly2]]"
+  ],
+  "category": [
+    "Orthologs"
+  ],
+  "adapter": {
+    "type": "MCScanAnchorsAdapter",
+    "mcscanAnchorsLocation": {
+      "locationType": "UriLocation",
+      "uri": "[[assembly1]]-[[assembly2]].anchors"
+    },
+    "bed1Location": {
+      "locationType": "UriLocation",
+      "uri": "[[assembly1]]/[[assembly1]].bed"
+    },
+    "bed2Location": {
+      "locationType": "UriLocation",
+      "uri": "[[assembly1]]/[[assembly2]].bed"
+    },
+    "assemblyNames": [
+      "[[assembly1]]",
+      "[[assembly2]]"
+    ]
+  },
+  "displays": [
+    {
+      "type": "DotplotDisplay",
+      "displayId": "[[assembly1]]2[[assmbly2]].anchors-DotplotDisplay"
+    },
+    {
+      "type": "LinearComparativeDisplay",
+      "displayId": "[[assembly1]]2[[assembly2]].anchors-LinearComparativeDisplay"
+    },
+    {
+      "type": "LinearSyntenyDisplay",
+      "displayId": "[[assembly1]]2[[assembly2]].anchors-LinearSyntenyDisplay"
+    },
+    {
+      "type": "LGVSyntenyDisplay",
+      "displayId": "[[assembly1]]2[[assembly2]].anchors-LGVSyntenyDisplay",
+      "mouseover": "jexl:get(feature,'mate').name"
+    }
+  ]
+}

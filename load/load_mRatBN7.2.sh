@@ -20,6 +20,10 @@ echo ""
 
 cd /home/rgdpub/jbrowse2/load
 
+../loadRootGFF.sh "$ROOTDIR" $ASSEMBLY
+
+cd /home/rgdpub/jbrowse2/load
+
 for dir in "$ROOTDIR"/*; do
   if [ -d "$dir" ]; then
     base=$(basename "$dir")

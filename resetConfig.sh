@@ -31,19 +31,21 @@ rm /data/jbrowse2/GRCh38.p14/* 2>null
 rm /data/jbrowse2/GRCh37.p13/* 2>null
 rm /data/jbrowse2/NCBI36/* 2>null
 rm /data/jbrowse2/GRCm39/* 2>null
-rm /data/jbrowse2/GRCm38/* 2>null
+rm /data/jbrowse2/GRCm38.p6/* 2>null
 rm /data/jbrowse2/MGSCv37/* 2>null
 rm /data/jbrowse2/CanFam3.1/* 2>null
 rm /data/jbrowse2/Sscrofa11.1/* 2>null
 rm /data/jbrowse2/Sscrofa10.2/* 2>null
-rm "/data/jbrowse2/Chlorocebus_sabeus 1.1/*" 2>null
+rm /data/jbrowse2/Chlorocebus_sabeus1.1/* 2>null
 rm /data/jbrowse2/Vero_WHO_p1.0/* 2>null
 rm /data/jbrowse2/Mhudiblu_PPA_v0/* 2>null
-rm /data/jbrowse2/PanPan1.1/* 2>null
+rm /data/jbrowse2/panpan1.1/* 2>null
 rm /data/jbrowse2/HetGla_female_1.0/* 2>null
 rm /data/jbrowse2/UTH_Rnor_SHR_Utx/* 2>null 
 rm /data/jbrowse2/UTH_Rnor_SHRSP_BbbUtx_1.0/* 2>null 
 rm /data/jbrowse2/UTH_Rnor_WKY_Bbb_1.0/* 2>null 
+rm /data/jbrowse2/ChiLan1.0/* 2>null 
+rm /data/jbrowse2/SpeTri2.0/* 2>null 
 
 
 
