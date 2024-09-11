@@ -65,11 +65,9 @@ if [ -f "$f" ]; then
    base=$(basename "$f" .bed.gz)
 
    if [[ -z "$3" ]]; then
-      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
+      jbrowse add-track "$fSorted"  --config="{\"displays\": [ { \"type\": \"LinearBasicDisplay\", \"displayId\": \"$base-$2-LinearBasicDisplay\", \"renderer\": { \"type\": \"SvgFeatureRenderer\", \"color1\": \"#770C0E\" } }]}"  --subDir="$2" --trackId="$base-$2" --load=copy  --name="$base" --assemblyNames="$2" --out=/data/jbrowse2/
    else 
-      jbrowse add-track "$fSorted" --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
+      jbrowse add-track "$fSorted"  --config="{\"displays\": [ { \"type\": \"LinearBasicDisplay\", \"displayId\": \"$base-$2-LinearBasicDisplay\", \"renderer\": { \"type\": \"SvgFeatureRenderer\", \"color1\": \"#770C0E\" } }]}"  --subDir="$2" --trackId="$base-$2" --load=copy --name="$base" --category="$3" --assemblyNames="$2" --out=/data/jbrowse2/
    fi
 fi
 done
-
-
