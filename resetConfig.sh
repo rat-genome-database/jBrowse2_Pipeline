@@ -46,6 +46,7 @@ rm /data/jbrowse2/UTH_Rnor_SHRSP_BbbUtx_1.0/* 2>null
 rm /data/jbrowse2/UTH_Rnor_WKY_Bbb_1.0/* 2>null 
 rm /data/jbrowse2/ChiLan1.0/* 2>null 
 rm /data/jbrowse2/SpeTri2.0/* 2>null 
+rm /data/jbrowse2/GRCr8/* 2>null 
 
 
 

@@ -18,6 +18,7 @@ mkdir logs
 ./resetConfig.sh 2>&1 | tee logs/resetConfig.log
 cd load
 #RAT
+./load_GRCr8.sh 2>&1 | tee /data/jbrowse_log/load_GRCr8.log
 ./load_mRatBN7.2.sh 2>&1 | tee /data/jbrowse_log/load_mRatBN7.2.log
 ./load_Rnor_6.0.sh 2>&1 | tee /data/jbrowse_log/load_Rnor_6.0.log
 ./load_Rnor_5.0.sh 2>&1 | tee /data/jbrowse_log/load_Rnor_5.0.log
@@ -59,15 +60,18 @@ cd /home/rgdpub/jbrowse2
 #load synteny
 ./loadPaf.sh
 
-cd /home/rgdpub/jbrowse2/load
-#RAT
-../loadVariants.sh mRatBN7.2 Rat 2>&1 | tee /data/jbrowse_log/load_mRatBN7.2_variants.log
-../loadVariants.sh Rnor_6.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_6.0_variants.log
-../loadVariants.sh Rnor_5.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_5.0_variants.log
-../loadVariants.sh RGSC_v3.4 Rat 2>&1 | tee /data/jbrowse_log/load_RGSC_v3.4_variants.log
-../loadVariants.sh GRCh38.p14 Human 2>&1 | tee /data/jbrowse_log/load_GRCh38.p14_variants.log
-../loadVariants.sh GRCh37.p13 Human 2>&1 | tee /data/jbrowse_log/load_GRCh37.p13_variants.log
-../loadVariants.sh NCBI36 Human 2>&1 | tee /data/jbrowse_log/load_NCBI36_variants.log
-../loadVariants.sh GRCm39 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm39_variants.log
-../loadVariants.sh GRCm38.p6 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm38_variants.log
-../loadVariants.sh MGSCv37 Mouse 2>&1 | tee /data/jbrowse_log/load_MGSCv37_variants.log
+if [ "$LOAD_VARIANTS" -eq 1 ]; then
+
+    cd /home/rgdpub/jbrowse2/load
+    #RAT
+    ../loadVariants.sh mRatBN7.2 Rat 2>&1 | tee /data/jbrowse_log/load_mRatBN7.2_variants.log
+    ../loadVariants.sh Rnor_6.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_6.0_variants.log
+    ../loadVariants.sh Rnor_5.0 Rat 2>&1 | tee /data/jbrowse_log/load_Rnor_5.0_variants.log
+    ../loadVariants.sh RGSC_v3.4 Rat 2>&1 | tee /data/jbrowse_log/load_RGSC_v3.4_variants.log
+    ../loadVariants.sh GRCh38.p14 Human 2>&1 | tee /data/jbrowse_log/load_GRCh38.p14_variants.log
+    ../loadVariants.sh GRCh37.p13 Human 2>&1 | tee /data/jbrowse_log/load_GRCh37.p13_variants.log
+    ../loadVariants.sh NCBI36 Human 2>&1 | tee /data/jbrowse_log/load_NCBI36_variants.log
+    ../loadVariants.sh GRCm39 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm39_variants.log
+    ../loadVariants.sh GRCm38.p6 Mouse 2>&1 | tee /data/jbrowse_log/load_GRCm38_variants.log
+    ../loadVariants.sh MGSCv37 Mouse 2>&1 | tee /data/jbrowse_log/load_MGSCv37_variants.log
+fi

@@ -25,6 +25,4 @@ for dir in "$ROOTDIR"/*; do
   fi
 done
 
-echo "running indexing"
-export NODE_OPTIONS='--max-old-space-size=4096'
-jbrowse text-index  --assemblies=${ASSEMBLY} --out /data/jbrowse2/ 2>&1 | tee /data/jbrowse_log/textIndex${ASSEMBLY}.log
+./indexTrack.sh "${ASSEMBLY}"

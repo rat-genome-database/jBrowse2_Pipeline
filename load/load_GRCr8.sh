@@ -5,10 +5,10 @@ source /etc/profile
 #set -o xtrace
 cd /home/rgdpub/jbrowse2/load
 
-ASSEMBLY="mRatBN7.2";
-ROOTDIR="/data/data/jbrowse2/gff3/Rat/mRatBN7.2"
-BIGWIG="/data/data/jbrowse2/bigwig/Rat/mRatBN7.2"
-BED="/data/data/jbrowse2/bed/Rat/mRatBN7.2"
+ASSEMBLY="GRCr8";
+ROOTDIR="/data/data/jbrowse2/gff3/Rat/GRCr8"
+BIGWIG="/data/data/jbrowse2/bigwig/Rat/GRCr8"
+BED="/data/data/jbrowse2/bed/Rat/GRCr8"
 
 echo ""
 echo "*****************************************************"
@@ -16,7 +16,7 @@ echo "***************** Loading $ASSEMBLY******************"
 echo "*****************************************************"
 echo ""
 
-../makeFasta.sh $ASSEMBLY "mRatBN7.2 (Rat)" 
+../makeFasta.sh $ASSEMBLY "GRCr8 (Rat)" 
 
 cd /home/rgdpub/jbrowse2/load
 
